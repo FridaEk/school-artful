@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+
+#top {
+    text-align: center;
+}
+
+#top>p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+}
+
+nav {
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    word-spacing: 3vw;
+    background-color: black;
+    padding: 2%;
+}
+
+nav>a {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-right: 3em;
+}
+
+.object {
+    margin: 3vh;
+    border: 1px solid black;
+    padding: 1%;
+    width: 18vw;
+    height: 53vh;
+    display: block;
+    text-align: center;
+    box-shadow: rgb(194, 193, 193) 0.3rem 0.3rem;
+}
+
+.object>img {
+    width: 15vw;
+    height: 42vh;
+    margin: 0;
+}
+
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    margin-top: 0.5vh;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#art {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+#about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: white;
+    align-self: center;
+}
+
+#about-desc {
+    color: white;
+    align-self: flex-start;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3%;
+    padding-top: 9%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.people {
+    align-self: center;
+}
+
+#name {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.pic {
+    border-radius: 50%;
+}
