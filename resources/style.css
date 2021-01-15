@@ -21,7 +21,7 @@ nav {
 }
 
 nav>a {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: white;
     padding-right: 3em;
@@ -67,6 +67,7 @@ nav>a {
     display: flex;
     flex-direction: row;
     background-color: black;
+    height: 100%;
 }
 
 #about-title {
@@ -77,12 +78,12 @@ nav>a {
 }
 
 #about-desc {
+    display: inline-block;
     color: white;
     align-self: flex-start;
     font-size: small;
     font-family: 'Montserrat', sans-serif;
     padding: 3%;
-    padding-top: 9%;
     padding-left: 9%;
     padding-right: 9%;
 }
