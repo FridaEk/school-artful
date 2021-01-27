@@ -35,13 +35,18 @@ nav>a {
     height: 53vh;
     display: block;
     text-align: center;
-    box-shadow: rgb(194, 193, 193) 0.3rem 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0 0 gray;
+    transition: 200ms;
 }
 
 .object>img {
     width: 15vw;
     height: 42vh;
     margin: 0;
+}
+
+.object:hover {
+    transform: scale(1.1);
 }
 
 .desc {
