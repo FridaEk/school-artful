@@ -1,5 +1,10 @@
 * {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
 }
 
 #top {
@@ -7,7 +12,7 @@
 }
 
 #top>p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 5rem;
 }
 
@@ -21,7 +26,7 @@ nav {
 }
 
 nav>a {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: white;
     padding-right: 3em;
@@ -35,8 +40,9 @@ nav>a {
     height: 53vh;
     display: block;
     text-align: center;
-    box-shadow: 0.2rem 0.2rem 0 0 gray;
+    box-shadow: 0.1rem 0.1rem 0 0 gray;
     transition: 200ms;
+    border-radius: 1%;
 }
 
 .object>img {
@@ -50,13 +56,13 @@ nav>a {
 }
 
 .desc {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: small;
     margin-top: 0.5vh;
 }
 
 .title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
 }
 
@@ -76,7 +82,7 @@ nav>a {
 }
 
 #about-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 5rem;
     color: white;
     align-self: center;
@@ -87,22 +93,53 @@ nav>a {
     color: white;
     align-self: flex-start;
     font-size: small;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 3%;
     padding-left: 9%;
     padding-right: 9%;
 }
 
-.people {
-    align-self: center;
-}
-
 #name {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: small;
 }
 
-.pic {
-    border-radius: 50%;
+.pop-up {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    align-items: center;
+    padding: 2%;
+    z-index: 10;
+    border-radius: 0.3rem;
+}
+
+.pop-up>img {
+    background-position: center;
+    background-image: fill;
+    border-radius: 0.3rem;
+}
+
+.pop-up>p {
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
 }
